@@ -1,0 +1,159 @@
+.hero-container {
+  max-width: 1024px;
+  margin: 0 auto;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-title {
+  margin: 4em 0 0em 0;
+  padding: 0;
+
+  text-align: center;
+  font-size: 3em;
+  span {
+    color: var(--primary-color-dark);
+  }
+}
+.hero-subtitle {
+  margin-left: 200px;
+  display: flex;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-size: 2em;
+
+  color: rgba(23, 37, 42, 0.5);
+
+  .hero-effect {
+    display: flex;
+    font-size: 30px;
+    margin-bottom: 20px;
+    //font-family: 'Trebuchet MS';
+  }
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2em auto;
+}
+
+.hbtn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0.7em 1.2em;
+  margin: 0px 0.5em 6px 0.5em;
+  text-align: center;
+  border: 2px solid var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2em;
+  border-radius: 16px;
+  white-space: nowrap;
+}
+/*----- CONTACT ME BUTTON----- */
+.hb-fill-middle2-rev::before {
+  position: absolute;
+  content: "";
+  background: var(--primary-color);
+  transition-duration: 0.3s;
+  z-index: -1;
+  inset: 0px 0px auto auto;
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2-rev:hover::before {
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2-rev {
+  background: var(--primary-color);
+  color: #fff;
+  transition: color 0.3s ease 0s, background 0s ease 0.3s;
+}
+
+.hb-fill-middle2-rev:hover {
+  background: transparent;
+  color: #000;
+
+  transition: color 0.3s ease 0s, background 0s ease 0s;
+}
+
+.hb-fill-middle2-rev::after {
+  position: absolute;
+  content: "";
+  background: var(--primary-color);
+  transition-duration: 0.3s;
+  z-index: -1;
+  inset: 0px auto auto 0px;
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2-rev:hover::after {
+  width: 0px;
+}
+/*----- SEE MY WORK BUTTON----- */
+.hb-fill-middle2::before {
+  position: absolute;
+  content: "";
+  background: var(--primary-color);
+  transition-duration: 0.3s;
+  z-index: -1;
+  inset: 0px 0px auto auto;
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2:hover::before {
+  width: 50%;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2 {
+  background: transparent;
+  color: #000;
+  transition: color 0.3s ease 0s, background 0s ease 0s;
+}
+
+.hb-fill-middle2:hover {
+  color: #fff;
+  background: var(--primary-color);
+  transition: color 0.3s ease 0s, background 0s ease 0.3s;
+}
+
+.hb-fill-middle2::after {
+  position: absolute;
+  content: "";
+  background: var(--primary-color);
+  transition-duration: 0.3s;
+  z-index: -1;
+  inset: 0px auto auto 0px;
+  width: 0px;
+  height: 100%;
+  opacity: 1;
+}
+
+.hb-fill-middle2:hover::after {
+  width: 50%;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin: 0 1em;
+  }
+}
